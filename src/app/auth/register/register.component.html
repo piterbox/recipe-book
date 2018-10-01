@@ -1,0 +1,15 @@
+<form (ngSubmit)="onRegister(f)" #f="ngForm">
+  <div class="from-group">
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" class="form-control" ngModel>
+  </div>
+
+  <div class="from-group">
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" class="form-control" [minLength]="6" ngModel>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Register</button>
+
+</form>
+

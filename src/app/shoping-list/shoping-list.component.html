@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-10 mt-3">
+    <app-shoping-edit></app-shoping-edit>
+    <hr>
+    <div class="list-group">
+      <a class="list-group-item list-group-item-action flex-column align-items-start"
+         style="cursor: pointer;"
+        *ngFor="let item of ingredients; let i = index;"
+         (click)="onEditItem(i)">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1">{{item.name}}</h5>
+          <span class="badge badge-primary">{{item.amount}}</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

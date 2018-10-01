@@ -1,0 +1,12 @@
+<a style="cursor: pointer;"
+   [routerLink]="index"
+   routerLinkActive="active"
+   class="list-group-item list-group-item-action flex-column align-items-start"
+   >
+  <div class="d-flex w-100 justify-content-between">
+    <h5 class="mb-1">{{recipe.name}}</h5>
+    <img src="{{recipe.imagePath}}" alt="{{recipe.name}}" style="max-height:50px" class="img-responsive">
+  </div>
+  <p class="mb-1">{{recipe.description}}</p>
+</a>
+
